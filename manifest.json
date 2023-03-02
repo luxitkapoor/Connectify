@@ -7,6 +7,12 @@
         "default_icon": "connectify.png"
     },
     "permissions":[
-        "tabs"
+        "tabs", "scripting", "storage"
+    ],
+    "content_scripts": [
+        {
+        "matches": ["https://*.linkedin.com/search/results/people/*", "https://*.linkedin.com/mynetwork/*"],
+        "js": ["content.js"]
+        }
     ]
 }

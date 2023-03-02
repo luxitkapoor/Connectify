@@ -6,6 +6,7 @@ body {
 }
 
 button{
+    margin-top: 10px;
     background: #5f9341;
     color: white;
     padding: 10px 20px;
